@@ -13,3 +13,26 @@ pub struct InstantiateMsg {
     pub payload: String,
     pub status: String,
 }
+
+
+//Define ExecuteMsg
+
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
+#[serde(rename_all = "snake_case")]
+pub enum ExecuteMsg {
+
+    // ExecuteMsg::VerifyW
+    /// Requester can verify proof
+    Verify { proof: String }
+
+}
+
+//Define Query Msg
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
+#[serde(rename_all = "snake_case")]
+pub enum QueryMsg {
+    Config {},
+}
+
+// We define a custom struct for each query response
+pub type ConfigResponse = State;
