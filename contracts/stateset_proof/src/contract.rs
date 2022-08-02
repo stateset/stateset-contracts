@@ -28,3 +28,18 @@ pub fn instantiate(
 
     Ok(Response::default())
 }
+
+
+// Entry Point for Execution of the Proof
+#[entry_point]
+pub fn execute(
+    deps: DepsMut,
+    env: Env,
+    info: MessageInfo,
+    msg: ExecuteMsg, // ExecuteMsg as defined in the msg.rs crate
+) -> Result<Response, ContractError> {
+    match msg {
+        // ExecuteMsg::Transfer from msg.rs crate
+        ExecuteMsg::Verify { proof } => execute_verify(deps, env, info, recipient),
+    }
+}

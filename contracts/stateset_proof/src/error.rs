@@ -13,6 +13,11 @@ pub enum ContractError {
     #[error("expired proof (expired {expired:?})")]
     ProofExpired { expired: u64 },
 
+
+    // ContractError::ProofExpired
+    #[error("proof verification failed (expired {expired:?})")]
+    VerificationFailed {},
+
     // ContractError::Unauthorized
     #[error("unauthorized")]
     Unauthorized {},
