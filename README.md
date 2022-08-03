@@ -1,6 +1,6 @@
 # Stateset Contracts
 
-Core smart contracts for implementing purchase order financing and invoice factoring on the Stateset Blockchain.
+Core smart contracts for the Stateset Blockchain.
 
 ## Prerequisites
 
