@@ -1,10 +1,10 @@
 use cosmwasm_std::Addr;
-use cw4::TOTAL_KEY;
+use workgroup::TOTAL_KEY;
 use cw_controllers::{Admin, Hooks};
 use cw_storage_plus::{Item, SnapshotMap, Strategy};
 
 pub const ADMIN: Admin = Admin::new("admin");
-pub const HOOKS: Hooks = Hooks::new("cw4-hooks");
+pub const HOOKS: Hooks = Hooks::new("workgroup-hooks");
 
 pub const TOTAL: Item<u64> = Item::new(TOTAL_KEY);
 

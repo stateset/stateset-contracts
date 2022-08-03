@@ -3,28 +3,28 @@ use serde::{Deserialize, Serialize};
 use std::ops::Deref;
 
 use cosmwasm_std::{to_binary, Addr, CosmosMsg, StdResult, WasmMsg};
-use cw4::{Cw4Contract, Member};
+use workgroup::{WorkgroupContract, Member};
 
 use crate::msg::ExecuteMsg;
 
-/// Cw4GroupContract is a wrapper around Cw4Contract that provides a lot of helpers
-/// for working with cw4-group contracts.
+/// StatesetWorkGroupContract is a wrapper around WorkgroupContract that provides a lot of helpers
+/// for working with stateset-workgroup contracts.
 ///
-/// It extends Cw4Contract to add the extra calls from cw4-group.
+/// It extends StatesetWorkgroupContract to add the extra calls from stateset-workgroup.
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
-pub struct Cw4GroupContract(pub Cw4Contract);
+pub struct StatesetWorkgroupGroupContract(pub WorkgroupContract);
 
-impl Deref for Cw4GroupContract {
-    type Target = Cw4Contract;
+impl Deref for StatesetWorkgroupContract {
+    type Target = WorkgroupContract;
 
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
 
-impl Cw4GroupContract {
+impl StatesetWorkgroupContract {
     pub fn new(addr: Addr) -> Self {
-        Cw4GroupContract(Cw4Contract(addr))
+        StatesetWorkgroupContract(WorkgroupContract(addr))
     }
 
     fn encode_msg(&self, msg: ExecuteMsg) -> StdResult<CosmosMsg> {
