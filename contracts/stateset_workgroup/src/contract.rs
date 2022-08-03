@@ -5,7 +5,7 @@ use cosmwasm_std::{
     SubMsg,
 };
 use cw2::set_contract_version;
-use cw4::{
+use workgroup::{
     Member, MemberChangedHookMsg, MemberDiff, MemberListResponse, MemberResponse,
     TotalWeightResponse,
 };
@@ -135,6 +135,7 @@ pub fn update_members(
         })?;
     }
 
+    // Removing members
     for remove in to_remove.into_iter() {
         let remove_addr = deps.api.addr_validate(&remove)?;
         let old = MEMBERS.may_load(deps.storage, &remove_addr)?;
