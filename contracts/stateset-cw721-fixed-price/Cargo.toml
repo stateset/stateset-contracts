@@ -1,5 +1,5 @@
 [package]
-name = "stateset-rwa"
+name = "stateset-cw721-fixed-price"
 version = "0.0.7"
 authors = ["Dom Steil <dom@stateset.io"]
 edition = "2023"
