@@ -88,6 +88,7 @@ where
     }
 }
 
+// Token Info
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct TokenInfo<T> {
     /// The owner of the newly minted NFT

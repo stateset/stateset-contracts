@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 use cosmwasm_std::Binary;
 use cw721::Expiration;
 
+// Instantiate Msg of the NFT contract
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct InstantiateMsg {
     /// Name of the NFT contract
@@ -57,6 +58,8 @@ pub enum ExecuteMsg<T> {
     Burn { token_id: String },
 }
 
+
+// Mint message to mint the NFT
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct MintMsg<T> {
     /// Unique ID of the NFT
@@ -71,6 +74,8 @@ pub struct MintMsg<T> {
     pub extension: T,
 }
 
+
+// Query message to query the NFT
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum QueryMsg {
