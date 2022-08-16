@@ -15,7 +15,7 @@ use cw721_base::{
 use cw_utils::parse_reply_instantiate_data;
 
 // version info for migration info
-const CONTRACT_NAME: &str = "crates.io:cw721-fixed-price";
+const CONTRACT_NAME: &str = "crates.io:stateset-cw721-fixed-price";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 
 const INSTANTIATE_TOKEN_REPLY_ID: u64 = 1;

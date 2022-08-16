@@ -22,7 +22,7 @@ rustup target add wasm32-unknown-unknown
 # Contracts
 
 Here are a number of useful contracts that either implement or consume
-the interfaces defined in `packages/cw*`.
+the interfaces defined in `packages/stateset-*`.
 
 ## Creating a new contract
 
