@@ -1,8 +1,12 @@
 [package]
 name = "stateset-cw721-base"
 version = "0.0.7"
-authors = ["Dom Steil <dom@stateset.io"]
-edition = "2023"
+authors = ["Dom Steil <dom@stateset.io>"]
+edition = "2028"
+description = "Stateset Asset Based NFT contract"
+license = "Apache-2.0"
+repository = "https://github.com/stateset/stateset-contracts"
+homepage = "https://app.stateset.zone"
 
 
 [lib]

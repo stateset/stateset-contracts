@@ -1,8 +1,12 @@
 [package]
 name = "stateset-workgroup"
 version = "0.0.1"
-authors = ["Dom Steil <dom@stateset.io"]
-edition = "2023"
+authors = ["Dom Steil <dom@stateset.io>"]
+edition = "2028"
+description = "Stateset Workgroup contract"
+license = "Apache-2.0"
+repository = "https://github.com/stateset/stateset-contracts"
+homepage = "https://app.stateset.zone"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
