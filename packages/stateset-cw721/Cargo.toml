@@ -2,7 +2,7 @@
 name = "cw721"
 version = "0.0.1"
 authors = ["Dom Steil <dom@stateset.io>"]
-edition = "2023"
+edition = "2021"
 description = "Stateset Interface: cw721"
 license = "Apache-2.0"
 repository = "https://github.com/stateset/stateset-contracts"
