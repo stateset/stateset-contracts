@@ -2,7 +2,7 @@
 name = "stateset-proof"
 version = "0.0.7"
 authors = ["Dom Steil <dom@stateset.io>"]
-edition = "2028"
+edition = "2021"
 description = "Stateset Proof contract"
 license = "Apache-2.0"
 repository = "https://github.com/stateset/stateset-contracts"
